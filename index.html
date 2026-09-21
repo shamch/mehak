@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our First Year</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="photos.css">
+</head>
+<body>
+  <main class="scene" aria-label="An anniversary storybook">
+    <div class="glow one"></div><div class="glow two"></div><div class="stars"></div>
+    <section class="stage is-closed" id="stage">
+      <button class="closed-book" id="openBook" aria-label="Open our anniversary book">
+        <i class="border"></i><i class="ornament top">✦</i>
+        <span class="cover-title">Our First<br><em>Year</em></span>
+        <span class="cover-subtitle">a little story about us</span><i class="ornament bottom">❦</i>
+      </button>
+      <div class="book" id="book" aria-live="polite">
+        <div class="book-shadow"></div><div class="book-back"></div>
+        <div class="spread" id="spread">
+          <article class="page left" id="leftPage"></article><div class="spine"></div>
+          <article class="page right" id="rightPage"></article>
+        </div><div class="turn-layer" id="turnLayer"></div>
+      </div>
+      <div class="book-ui" id="bookUi">
+        <button class="arrow" id="previous" aria-label="Previous pages">←</button>
+        <p id="progress"></p><button class="arrow" id="next" aria-label="Next pages">→</button>
+      </div>
+      <p class="hint" id="hint">click the cover to begin</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
